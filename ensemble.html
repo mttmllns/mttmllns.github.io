@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ensemble Bug</title>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+    
+    function goForward(){
+        window.history.forward();
+    }
+    
+    function doReload(){
+        window.location.reload();
+    }
+    
+    function loadForm(){
+        window.location="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit"
+    }
+</script>
+<body>
+<br/>
+<button type="button" onclick="javascript:goBack()">Window History Back</button>
+<br/>
+<button type="button" onclick="javascript:goForward()">Window History Forward</button>
+<br/>
+<button type="button" onclick="javascript:doReload()">Reload Page</button>
+<br/>
+<button type="button" onclick="javascript:loadForm()">Load Form from W3Schools</button>
+</body>
+</html>
